@@ -1,6 +1,7 @@
 import portfolioCards from "@/assets/portfolio-cards.jpg";
 import portfolioMobile from "@/assets/portfolio-mobile.jpg";
 import mobileScreenshot from "@/assets/mobile-screenshot.png";
+import pyqWebsite from "@/assets/pyq-website.png.png";
 import poster1 from "@/assets/poster-1.jpg";
 import poster2 from "@/assets/poster-2.png";
 import { Mail, Linkedin, Instagram } from "lucide-react";
@@ -15,10 +16,10 @@ const Portfolio = () => {
       description: "Bold typography and cultural design elements"
     },
     {
-      title: "Mobile App Design",
-      category: "UI/UX Design",
-      image: mobileScreenshot,
-      description: "Modern mobile interface with bold typography"
+      title: "PYQ Platform",
+      category: "Web Design",
+      image: pyqWebsite,
+      description: "A platform for accessing previous year questions and notes"
     },
     {
       title: "Magazine Cover",
@@ -97,45 +98,7 @@ const Portfolio = () => {
             />
           </div>
           
-          {/* Contact overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-8">
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button
-                variant="secondary"
-                size="lg"
-                className="bg-accent text-background hover:bg-accent/90 font-bold"
-                asChild
-              >
-                <a href="mailto:luckychatterjee4220006@gmail.com" className="flex items-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Email
-                </a>
-              </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                className="bg-accent text-background hover:bg-accent/90 font-bold"
-                asChild
-              >
-                <a href="https://www.linkedin.com/in/luckychatterjee06" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <Linkedin className="w-5 h-5" />
-                  LinkedIn
-                </a>
-              </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                className="bg-accent text-background hover:bg-accent/90 font-bold"
-                asChild
-              >
-                <a href="https://instagram.com/luckychatterjee_" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <Instagram className="w-5 h-5" />
-                  Instagram
-                </a>
-              </Button>
-            </div>
-          </div>
-          
+                    
           {/* Corner tear decoration */}
           <div className="absolute top-0 right-0 w-0 h-0 border-t-[80px] border-t-accent border-l-[80px] border-l-transparent" />
         </div>

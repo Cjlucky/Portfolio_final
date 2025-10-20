@@ -112,6 +112,23 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-bg {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-bg {
+    animation: pulse-bg 8s ease-in-out infinite;
+  }
   .font-display {
     font-family: 'Bebas Neue', sans-serif;
   }

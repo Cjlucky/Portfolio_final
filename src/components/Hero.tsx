@@ -1,64 +1,48 @@
 import { ArrowDown } from "lucide-react";
-import mascot from "@/assets/mascot.png";
+import heroCharacter from "@/assets/hero-character.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-background flex items-center justify-center overflow-hidden px-4 py-20">
       {/* Decorative Elements */}
-      <div className="absolute top-10 left-10 w-16 h-32 bg-muted opacity-20 rotate-12 rounded" />
-      <div className="absolute bottom-20 right-10 w-20 h-20 bg-accent opacity-10 rounded-full" />
-      
-      {/* Toolbar sidebar decoration */}
-      <div className="absolute left-0 top-1/4 hidden md:flex flex-col gap-2 p-4 bg-secondary rounded-r-lg border-r-4 border-accent">
-        <div className="w-8 h-8 bg-muted rounded" />
-        <div className="w-8 h-8 bg-muted rounded" />
-        <div className="w-8 h-8 bg-muted rounded" />
-        <div className="w-8 h-8 bg-accent rounded" />
-        <div className="w-8 h-8 bg-muted rounded" />
-      </div>
+      <div className="absolute top-10 left-10 w-16 h-32 bg-muted opacity-20 rotate-12 rounded animate-pulse-bg" style={{ animationDelay: '4s' }} />
+      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[60vw] h-[60vw] md:w-[40vw] md:h-[40vw] bg-accent rounded-full opacity-50 blur-3xl animate-pulse-bg" />
 
-      <div className="relative z-10 text-center max-w-6xl mx-auto">
-        {/* Subheading */}
-        <div className="mb-4 flex items-center justify-center gap-3">
-          <div className="h-px w-12 bg-accent"></div>
-          <p className="text-muted-foreground uppercase tracking-widest text-sm font-semibold">
-            Graphic Designer
-          </p>
-          <div className="h-px w-12 bg-accent"></div>
-        </div>
-
-        {/* Main Title */}
-        <div className="relative">
-          <h1 className="font-display text-[12vw] md:text-[10rem] lg:text-[12rem] leading-none tracking-tighter mb-6 relative group cursor-pointer transition-all duration-300 hover:scale-105">
-            <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] group-hover:drop-shadow-[0_0_50px_rgba(229,9,20,1)] transition-all duration-300">
+      <div className="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-8 items-center relative z-10">
+        {/* Left Side - Text Content */}
+        <div className="space-y-4 text-left">
+          <h2 className="text-xl md:text-2xl font-light tracking-wider">LUCKY CHATTERJEE</h2>
+          <p className="text-lg md:text-xl text-gray-400">GRAPHIC DESIGNING</p>
+          <div>
+            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl text-accent leading-none tracking-tight">
               PORTFOLIO
+            </h1>
+            <div className="h-1 w-32 bg-accent mt-2"></div>
+          </div>
+          <div className="pt-2">
+            <span className="inline-block bg-accent/80 text-white text-sm md:text-base px-6 py-2 rounded-full font-semibold shadow-lg">
+              Designs that Tell a Story
             </span>
-            {/* Red tape torn effect across the word */}
-            <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 h-16 md:h-24 bg-accent transform -rotate-1 group-hover:rotate-1 transition-transform duration-300" 
-                 style={{
-                   clipPath: "polygon(0% 20%, 2% 25%, 5% 18%, 8% 22%, 12% 15%, 15% 20%, 20% 18%, 25% 22%, 30% 17%, 35% 23%, 40% 19%, 45% 24%, 50% 20%, 55% 25%, 60% 18%, 65% 22%, 70% 19%, 75% 24%, 80% 21%, 85% 26%, 90% 20%, 95% 23%, 98% 19%, 100% 24%, 100% 76%, 98% 71%, 95% 77%, 90% 73%, 85% 78%, 80% 74%, 75% 79%, 70% 75%, 65% 80%, 60% 76%, 55% 81%, 50% 77%, 45% 82%, 40% 78%, 35% 83%, 30% 79%, 25% 84%, 20% 80%, 15% 85%, 12% 81%, 8% 86%, 5% 82%, 2% 87%, 0% 83%)"
-                 }}
-            />
-          </h1>
-          
-          {/* Red accent overlay */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent opacity-80 rounded-full blur-3xl -z-10" />
+          </div>
         </div>
 
-        {/* Mascot */}
-        <div className="absolute -right-4 top-1/2 -translate-y-1/2 md:right-10 w-24 h-24 md:w-32 md:h-32 animate-bounce">
-          <img src={mascot} alt="Designer mascot" className="w-full h-full object-contain drop-shadow-2xl" />
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="mt-16 flex flex-col items-center gap-2 animate-pulse">
-          <span className="text-muted-foreground text-sm uppercase tracking-wider">Scroll Down</span>
-          <ArrowDown className="w-5 h-5 text-accent" />
+        {/* Right Side - 3D Illustration */}
+        <div className="relative flex items-center justify-center h-full">
+          <img 
+            src={heroCharacter} 
+            alt="3D Character Illustration" 
+            className="w-full max-w-md lg:max-w-lg object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 animate-float"
+          />
         </div>
       </div>
 
-      {/* Bottom torn edge */}
-      <div className="absolute bottom-0 left-0 right-0 h-8 bg-foreground torn-bottom" />
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-8 right-8 flex flex-col items-center space-y-2 text-white">
+        <div className="w-12 h-12 md:w-16 md:h-16 bg-accent rounded-md flex items-center justify-center shadow-lg">
+          <ArrowDown className="w-6 h-6 md:w-8 md:h-8 animate-bounce" />
+        </div>
+        <p className="text-xs tracking-widest uppercase">SCROLL DOWN</p>
+      </div>
     </section>
   );
 };
