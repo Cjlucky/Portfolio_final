@@ -29,15 +29,21 @@ const Hero = () => {
 
         {/* Main Title */}
         <div className="relative">
-          <h1 className="font-display text-[12vw] md:text-[10rem] lg:text-[12rem] leading-none tracking-tighter mb-6">
-            <span className="inline-block">PORTF</span>
+          <h1 className="font-display text-[12vw] md:text-[10rem] lg:text-[12rem] leading-none tracking-tighter mb-6 relative">
             <span className="inline-block relative">
-              <span className="text-foreground">OLIO</span>
-              <span className="absolute -top-4 -right-4 md:-top-8 md:-right-8 text-accent text-[8vw] md:text-[6rem] lg:text-[8rem] font-display rotate-[-8deg] z-20">
-                2025
-              </span>
+              <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] animate-pulse">PORTF</span>
+              {/* Torn paper effect */}
+              <span className="absolute top-1/2 -translate-y-1/2 -right-2 md:-right-4 w-8 md:w-16 h-full bg-accent opacity-30 rotate-[8deg] blur-sm" />
+            </span>
+            <span className="inline-block relative">
+              <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] animate-pulse">OLIO</span>
             </span>
           </h1>
+          
+          {/* Lucky Chatterjee text */}
+          <div className="font-handwritten text-3xl md:text-5xl text-accent rotate-[-4deg] mb-8">
+            LUCKY CHATTERJEE
+          </div>
           
           {/* Red accent overlay */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent opacity-80 rounded-full blur-3xl -z-10" />

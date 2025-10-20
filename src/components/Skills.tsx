@@ -2,16 +2,14 @@ const Skills = () => {
   const skills = [
     "Graphic Design",
     "Branding",
-    "Print Design",
     "Social Media",
-    "UI/UX Design",
-    "Typography"
+    "UI/UX Design"
   ];
 
   const tools = [
     { name: "Photoshop", color: "#31A8FF" },
     { name: "Illustrator", color: "#FF9A00" },
-    { name: "After Effects", color: "#9999FF" },
+    { name: "Canva", color: "#00C4CC" },
     { name: "Figma", color: "#F24E1E" }
   ];
 

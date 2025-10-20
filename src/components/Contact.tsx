@@ -1,13 +1,11 @@
-import { Mail, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import mascot from "@/assets/mascot.png";
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Mail, label: "Email", href: "mailto:hello@designer.com" },
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Instagram, label: "Instagram", href: "#" }
+    { icon: Mail, label: "Email", href: "mailto:luckychatterjee4220006@gmail.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/luckychatterjee06" }
   ];
 
   return (
@@ -71,16 +69,28 @@ const Contact = () => {
           </div>
 
           {/* Additional contact info */}
-          <div className="pt-12 space-y-2">
+          <div className="pt-12 space-y-4">
             <p className="text-background/80 text-sm uppercase tracking-wider">
-              Or reach out directly
+              My Websites
             </p>
-            <a 
-              href="mailto:hello@designer.com" 
-              className="text-background text-2xl md:text-3xl font-display hover:underline decoration-4 decoration-background/50 transition-all"
-            >
-              hello@designer.com
-            </a>
+            <div className="flex flex-col gap-2">
+              <a 
+                href="https://cjlucky.blogspot.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-background text-xl md:text-2xl font-display hover:underline decoration-4 decoration-background/50 transition-all"
+              >
+                cjlucky.blogspot.com
+              </a>
+              <a 
+                href="https://luckynet.xyz" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-background text-xl md:text-2xl font-display hover:underline decoration-4 decoration-background/50 transition-all"
+              >
+                luckynet.xyz
+              </a>
+            </div>
           </div>
         </div>
       </div>

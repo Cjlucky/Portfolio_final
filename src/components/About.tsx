@@ -1,4 +1,4 @@
-import mascot from "@/assets/mascot.png";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const About = () => {
   return (
@@ -44,16 +44,12 @@ const About = () => {
 
           {/* Right Side - Visual */}
           <div className="relative">
-            <div className="relative bg-accent rounded-full w-64 h-64 md:w-96 md:h-96 mx-auto flex items-center justify-center overflow-hidden">
-              {/* Placeholder for designer photo - replace with actual photo */}
-              <div className="w-full h-full bg-secondary flex items-center justify-center">
-                <span className="font-display text-6xl text-muted-foreground">PHOTO</span>
-              </div>
-            </div>
-            
-            {/* Cartoon mascot accent */}
-            <div className="absolute -top-8 -right-8 w-20 h-20 md:w-24 md:h-24">
-              <img src={mascot} alt="Mascot" className="w-full h-full object-contain rotate-12 drop-shadow-2xl" />
+            <div className="relative bg-accent rounded-lg w-64 h-64 md:w-96 md:h-96 mx-auto overflow-hidden shadow-brutal rotate-[-2deg] hover:rotate-0 transition-transform duration-300">
+              <img 
+                src={profilePhoto} 
+                alt="Lucky Chatterjee"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Crown doodle */}
