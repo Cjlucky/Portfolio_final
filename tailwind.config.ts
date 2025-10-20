@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Bebas Neue', 'sans-serif'],
+        handwritten: ['Permanent Marker', 'cursive'],
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +61,12 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        portfolio: {
+          red: "hsl(var(--portfolio-red))",
+          black: "hsl(var(--portfolio-black))",
+          white: "hsl(var(--portfolio-white))",
+          gray: "hsl(var(--portfolio-gray))",
         },
       },
       borderRadius: {
