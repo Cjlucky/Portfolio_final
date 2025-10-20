@@ -10,14 +10,14 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text */}
           <div className="text-background space-y-6">
-            <div className="relative inline-block">
-              <h2 className="font-display text-6xl md:text-8xl leading-none mb-2">
+            <div className="relative inline-block group cursor-pointer">
+              <h2 className="font-display text-6xl md:text-8xl leading-none mb-2 transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(229,9,20,0.6)]">
                 ABOUT ME
               </h2>
-              <div className="h-2 w-32 bg-accent absolute -bottom-2 left-0" />
+              <div className="h-2 w-32 bg-accent absolute -bottom-2 left-0 transition-all duration-300 group-hover:w-48" />
             </div>
             
-            <h3 className="font-display text-3xl md:text-4xl text-muted">
+            <h3 className="font-display text-3xl md:text-4xl text-muted transition-all duration-300 hover:text-accent hover:scale-105 cursor-pointer inline-block">
               CREATIVE DESIGNER
             </h3>
             

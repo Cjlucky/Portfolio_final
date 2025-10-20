@@ -1,5 +1,6 @@
 import portfolioCards from "@/assets/portfolio-cards.jpg";
 import portfolioMobile from "@/assets/portfolio-mobile.jpg";
+import mobileScreenshot from "@/assets/mobile-screenshot.png";
 import poster1 from "@/assets/poster-1.jpg";
 import poster2 from "@/assets/poster-2.png";
 import { Mail, Linkedin, Instagram } from "lucide-react";
@@ -16,7 +17,7 @@ const Portfolio = () => {
     {
       title: "Mobile App Design",
       category: "UI/UX Design",
-      image: portfolioMobile,
+      image: mobileScreenshot,
       description: "Modern mobile interface with bold typography"
     },
     {

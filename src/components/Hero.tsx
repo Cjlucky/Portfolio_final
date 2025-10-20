@@ -29,21 +29,17 @@ const Hero = () => {
 
         {/* Main Title */}
         <div className="relative">
-          <h1 className="font-display text-[12vw] md:text-[10rem] lg:text-[12rem] leading-none tracking-tighter mb-6 relative">
-            <span className="inline-block relative">
-              <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] animate-pulse">PORTF</span>
-              {/* Torn paper effect */}
-              <span className="absolute top-1/2 -translate-y-1/2 -right-2 md:-right-4 w-8 md:w-16 h-full bg-accent opacity-30 rotate-[8deg] blur-sm" />
+          <h1 className="font-display text-[12vw] md:text-[10rem] lg:text-[12rem] leading-none tracking-tighter mb-6 relative group cursor-pointer transition-all duration-300 hover:scale-105">
+            <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] group-hover:drop-shadow-[0_0_50px_rgba(229,9,20,1)] transition-all duration-300">
+              PORTFOLIO
             </span>
-            <span className="inline-block relative">
-              <span className="text-foreground drop-shadow-[0_0_30px_rgba(229,9,20,0.8)] animate-pulse">OLIO</span>
-            </span>
+            {/* Red tape torn effect across the word */}
+            <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 h-16 md:h-24 bg-accent transform -rotate-1 group-hover:rotate-1 transition-transform duration-300" 
+                 style={{
+                   clipPath: "polygon(0% 20%, 2% 25%, 5% 18%, 8% 22%, 12% 15%, 15% 20%, 20% 18%, 25% 22%, 30% 17%, 35% 23%, 40% 19%, 45% 24%, 50% 20%, 55% 25%, 60% 18%, 65% 22%, 70% 19%, 75% 24%, 80% 21%, 85% 26%, 90% 20%, 95% 23%, 98% 19%, 100% 24%, 100% 76%, 98% 71%, 95% 77%, 90% 73%, 85% 78%, 80% 74%, 75% 79%, 70% 75%, 65% 80%, 60% 76%, 55% 81%, 50% 77%, 45% 82%, 40% 78%, 35% 83%, 30% 79%, 25% 84%, 20% 80%, 15% 85%, 12% 81%, 8% 86%, 5% 82%, 2% 87%, 0% 83%)"
+                 }}
+            />
           </h1>
-          
-          {/* Lucky Chatterjee text */}
-          <div className="font-handwritten text-3xl md:text-5xl text-accent rotate-[-4deg] mb-8">
-            LUCKY CHATTERJEE
-          </div>
           
           {/* Red accent overlay */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent opacity-80 rounded-full blur-3xl -z-10" />
